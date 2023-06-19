@@ -4,6 +4,7 @@
 
 const express = require("express");
 const cors = require("cors");
+//const { PORT } = require("./config");
 
 const { NotFoundError } = require("./expressError");
 
@@ -41,5 +42,6 @@ app.use(function (err, req, res, next) {
     error: { message, status },
   });
 });
+
 
 module.exports = app;
